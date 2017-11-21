@@ -40,9 +40,14 @@
             var Headline = $('h1').text();
             var Subhead = $('h2').text();
             $('h1').text(Subhead);
-            $('h2').text(Headline);
-            
-            
+            $('h2').text(Headline);   
+        }
+        
+        function noSubhead(){
+            $('h2').fadeOut();
+            console.log($('h2').fadeOut());
+            $('h3').fadeOut();
+            console.log($('h3').fadeOut());  
         }
   
     

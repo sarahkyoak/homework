@@ -4,6 +4,9 @@
   <title>jQuery test page</title>
 </head>
 <body>
+    <style>.error {
+  background-color: yellow;
+}</style>
   <h1>Lorem ipsum</h1>
   <h2>From Wikipedia, the free encyclopedia</h2>
   <p class="byline">By Someone</p>
@@ -52,6 +55,14 @@
         function undo(){
             $('h2').show();
             $('h3').show();
+        }
+        
+        function highlightByline(){
+            $('.byline').addClass('error');
+        }
+        
+        function unHighlightByline(){
+            $('.byline').removeClass('error');
         }
   
     
